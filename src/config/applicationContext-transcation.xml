@@ -38,7 +38,7 @@
 	</tx:advice>
 	<!-- aop -->
 	<aop:config>
-		<aop:advisor advice-ref="txAdvice" pointcut="execution(* com.xxt.ssm.service.impl.*.*(..))"/>
+		<aop:advisor advice-ref="txAdvice" pointcut="execution(* com.xxt.service.impl.*.*(..))"/>
 	</aop:config>
 	
 	

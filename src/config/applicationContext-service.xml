@@ -15,6 +15,6 @@
 		http://www.springframework.org/schema/tx/spring-tx-3.2.xsd ">
 		
 	<!-- 商品管理的service -->
-	<bean id="itemsServiceImpl" class="com.xxt.ssm.service.impl.ItemsServiceImpl"></bean>
+	<bean id="userServiceImpl" class="com.xxt.service.impl.UserServiceImpl"></bean>
 	
 </beans>

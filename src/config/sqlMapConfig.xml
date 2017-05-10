@@ -8,18 +8,11 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	<!-- 配置别名 -->
 	<typeAliases>
 		<!-- 批量扫描别名 -->
-		<package name="com.xxt.ssm.entity"/>
+		<package name="com.xxt.entity"/>
 	</typeAliases>
 
 	<!-- 配置mapper
 	由于使用spring和mybatis的整合包进行mapper扫描，这里不需要配置了。
 	必须遵循：mapper.xml和mapper.java文件同名且在一个目录 
 	 -->
-
-	<!-- <mappers>
-	
-	</mappers> -->
-	
-	
-	
 </configuration>
