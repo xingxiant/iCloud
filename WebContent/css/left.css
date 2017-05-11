@@ -1,0 +1,23 @@
+#welcome{
+    background: #87cdfe;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 0;
+}
+#nav span{
+    margin-right: 6px;
+}
+#nav a{
+    background: #fff;
+}
+#nav a:hover{
+    color: #2b669a;
+    background: #d5d5d5;
+}
+#collapseOne,#collapseTwo,#collapseThree{
+    padding-left: 28px;
+}

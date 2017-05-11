@@ -1,0 +1,49 @@
+body{
+    background: url("../images/logBg.png");
+}
+#start{
+    font-size: 20px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 40px;
+    background: #337ab7;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.input-group{
+    margin-left: 10px;
+}
+#form{
+    background: #f9f9f9;
+    width: 420px;
+    margin: 200px auto 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px #a7a7a7;
+}
+#form span{
+    width: 80px;
+    font-size: 12px;
+}
+#form .inputType{
+    width: 320px;
+}
+#loginBtn{
+    display: inline-block;
+    width: 400px;
+    margin-right: 40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#tip{
+	width: 400px;
+	text-align: center;
+	background: #FFE4B5;
+	height: 30px;
+	line-height: 30px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	color: #ff2d2d;
+	border-bottom: 1px solid #808080;
+}

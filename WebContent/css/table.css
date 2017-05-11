@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-12-12 13:01:36
+ * @version $Id$
+ */
+ a{
+ 	text-decoration: none;
+ }
+.demoTable{
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+}
+.demoTableTab{
+	height:40px;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	padding-top: 5px;
+}
+.demoTableTab span{
+	height:40px;
+	line-height:30px;
+}
+.tabTit{
+	font-weight: 600;
+}
+.glyphicon{
+	font-size: 20px;
+	cursor: pointer;
+	color: #00b1ff;
+}

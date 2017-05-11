@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xxt.mapper.UserMapperCustom" >
+  <!-- 定义商品查询的sql片段 -->
+  <sql id="query_user_where">
+  	<!-- 动态sql，满足条件进行sql拼接 -->
+  	<if test="userCustom!=null">
+  		
+  		
+  	</if>
+  	
+  </sql>
+  <!-- 用户列表查询 -->
+  <select id="findUserList"  parameterType="com.xxt.po.UserQueryVo" resultType="com.xxt.po.UserCustom">
+  	select * from user
+  </select>
+  <!-- 验证用户查询 -->
+  <select id="checkUser"  parameterType="com.xxt.po.UserQueryVo" resultType="com.xxt.po.UserCustom">
+  	select * from user where username like #{userCustom.username} and password like #{userCustom.password}
+  </select>
+</mapper>

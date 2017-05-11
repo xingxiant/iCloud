@@ -1,0 +1,42 @@
+body{
+    /*background: url("../images/logBg.png");*/
+}
+#start{
+    font-size: 20px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 40px;
+    background: #337ab7;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.input-group{
+    margin-left: 100px;
+}
+#form{
+    background: #f9f9f9;
+    width: 700px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px #a7a7a7;
+}
+#form span{
+    width: 80px;
+    font-size: 12px;
+}
+#form .inputType{
+    width: 420px;
+}
+#subBtn{
+    display: inline-block;
+    width: 200px;
+    border-radius: 5px;
+    margin-left: 150px;
+    margin-bottom: 60px;
+    color: #000000;
+}
+#marridList{
+    display: none;
+}

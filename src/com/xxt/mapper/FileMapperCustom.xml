@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xxt.mapper.FileMapperCustom" >
+
+  <!-- 添加file -->
+  <insert id="insertFile" parameterType="com.xxt.po.FileQueryVo">
+  insert into file (user, filename, 
+      filesize, createtime, canshare
+      )
+    values (#{fileCustom.user}, #{fileCustom.filename}, 
+      #{fileCustom.filesize}, #{fileCustom.createtime}, #{fileCustom.canshare}
+      )
+  </insert>
+  <!-- 根据用户id查询file -->
+  <select id="findUserListByUserId" parameterType="int" resultType="com.xxt.po.FileCustom">
+  	select * from file where user=#{value}
+  </select>
+</mapper>

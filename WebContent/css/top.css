@@ -1,0 +1,25 @@
+/*top*/
+
+body{
+    width: 100%;
+    background-image: url("../images/headBg.jpg");
+    background-position: 10% 20%;
+    background-size: cover;
+    color: #fff;
+}
+h1{
+    display: inline-block;
+    margin: 50px 0 0 100px;
+}
+a{
+	color: #ffffff;
+	text-decoration: none;
+}
+a:hover{
+	color: #ffffff;
+	text-decoration: none;
+}
+a:visited,a:active,a:link{
+	color: #ffffff;
+	text-decoration: none;
+}
