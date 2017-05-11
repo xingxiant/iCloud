@@ -17,7 +17,7 @@
    <div id="form">
     <p id="start">iCloud</p>
     <form class="" role="form" method="post" action="${pageContext.request.contextPath}/logs/login.action">
-        <font color="red">&nbsp;&nbsp;&nbsp;${error }</font><br>
+        <font color="red">&nbsp;&nbsp;&nbsp;${requestScope.error }</font><br>
         <div class="input-group">
             <span class="input-group-addon">用户名</span>
             <input type="text" name="userCustom.username" class="form-control inputType" placeholder="用户名">
