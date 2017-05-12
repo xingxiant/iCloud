@@ -14,5 +14,6 @@ public interface UserService {
 	//根据id查询用户
 	public	UserCustom findUserById(int id)throws Exception; 
 	//修改用户
+	public void updateUser(UserQueryVo userQueryVo)throws Exception;
 	
 }

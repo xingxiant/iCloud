@@ -15,4 +15,5 @@
   <select id="findUserListByUserId" parameterType="int" resultType="com.xxt.po.FileCustom">
   	select * from file where user=#{value}
   </select>
+  
 </mapper>

@@ -29,13 +29,16 @@ public class UserMapperCustomTest {
 		UserQueryVo userQueryVo=new UserQueryVo();
 		UserCustom userCustom =new UserCustom();
 		UserCustom userCustom1 =new UserCustom();
-		userCustom.setUsername("уехЩ1");
+		userCustom.setUsername("abc");
 		userCustom.setPassword("123456");
+		userCustom.setId(2);
+		userCustom.setIsvip(0);
 		userQueryVo.setUserCustom(userCustom);
 		
-		userCustom1=userMapperCustom.findUserById(1);
+		userMapperCustom.update(userQueryVo);
+		
 		 
-		System.out.println(userCustom1.getUsername());
+	
 		
 	}
 

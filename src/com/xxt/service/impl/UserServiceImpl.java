@@ -24,5 +24,10 @@ public class UserServiceImpl implements UserService {
 		
 		return userMapperCustom.findUserById(id);
 	}
+	@Override
+	public void updateUser(UserQueryVo userQueryVo) throws Exception {
+		
+		userMapperCustom.update(userQueryVo);
+	}
 
 }

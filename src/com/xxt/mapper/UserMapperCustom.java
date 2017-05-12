@@ -15,4 +15,6 @@ public interface UserMapperCustom {
     public UserCustom checkUser(UserQueryVo userQueryVo)throws Exception;
     //根据id查询用户
     public UserCustom findUserById(int id)throws Exception;
+    //修改用户信息
+    public void update(UserQueryVo userQueryVo)throws Exception;
 }

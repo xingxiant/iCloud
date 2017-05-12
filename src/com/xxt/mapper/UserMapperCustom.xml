@@ -22,4 +22,12 @@
   <select id="findUserById"  parameterType="int" resultType="com.xxt.po.UserCustom">
   	select * from user where id = #{value}
   </select>
+  <!-- 修改用户信息 -->
+  <update id="update" parameterType="com.xxt.po.UserQueryVo" >
+  	update user
+    set password = #{userCustom.password,jdbcType=VARCHAR},
+      username = #{userCustom.username,jdbcType=VARCHAR},
+      isvip = #{userCustom.isvip,jdbcType=INTEGER}
+    where id = #{userCustom.id,jdbcType=INTEGER}
+  </update>
 </mapper>
