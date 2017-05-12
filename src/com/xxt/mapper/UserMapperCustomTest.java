@@ -33,9 +33,9 @@ public class UserMapperCustomTest {
 		userCustom.setPassword("123456");
 		userQueryVo.setUserCustom(userCustom);
 		
-		userCustom1=userMapperCustom.checkUser(userQueryVo);
+		userCustom1=userMapperCustom.findUserById(1);
 		 
-		System.out.println(userCustom1);
+		System.out.println(userCustom1.getUsername());
 		
 	}
 

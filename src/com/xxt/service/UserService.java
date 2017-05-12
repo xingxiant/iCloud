@@ -9,7 +9,10 @@ import com.xxt.po.UserQueryVo;
  *
  */
 public interface UserService {
-
-	public	UserCustom checkUser(UserQueryVo userQueryVo)throws Exception;  //检查用户是否存在
+	//检查用户是否存在
+	public	UserCustom checkUser(UserQueryVo userQueryVo)throws Exception;  
+	//根据id查询用户
+	public	UserCustom findUserById(int id)throws Exception; 
+	//修改用户
 	
 }

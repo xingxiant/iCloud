@@ -31,8 +31,8 @@ import com.xxt.utils.PageBean;
  */
 @Controller
 //添加url的根路径
-@RequestMapping("/file")
-public class fileController {
+@RequestMapping("/fileAction")
+public class FileController {
 	@Autowired
 	private FileService fileService;
 	@RequestMapping("/upload")

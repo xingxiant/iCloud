@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,15 +18,20 @@
 
 <body>
 <div>
-    <p id="welcome">欢迎，<%=name %></p>
+    <p id="welcome">欢迎，${sessionScope.user_name }</p>
 </div>
 <div id="nav">
     <ul class="nav nav-stacked">
         <li><a href="#collapseOne" data-toggle="collapse"><span class="glyphicon glyphicon-user"></span>我的信息</a></li>
         <div id="collapseOne" class="collapse">
             <ul class="nav nav-stacked">
-                <li><a href="./table.jsp" target="mainWindow">查看信息</a></li>
-                <li><a href="./staff_update.jsp" target="mainWindow">修改信息</a></li>
+            
+                <li>
+                	<a 
+                	href= "${pageContext.request.contextPath}/userAction/queryById.action?id=${sessionScope.user_id}" 
+                	target="mainWindow">查看信息</a>
+                </li>
+                
             </ul>
         </div>
         <li><a href="#collapseTwo" data-toggle="collapse"><span class="glyphicon glyphicon-home"></span>我的部门</a></li>

@@ -13,4 +13,6 @@ public interface UserMapperCustom {
     public List<UserCustom> findUserList(UserQueryVo userQueryVo)throws Exception;
     //查询用户列表
     public UserCustom checkUser(UserQueryVo userQueryVo)throws Exception;
+    //根据id查询用户
+    public UserCustom findUserById(int id)throws Exception;
 }

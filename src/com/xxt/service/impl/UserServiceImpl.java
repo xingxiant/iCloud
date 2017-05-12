@@ -19,5 +19,10 @@ public class UserServiceImpl implements UserService {
 		
 		return userMapperCustom.checkUser(userQueryVo);
 	}
+	@Override
+	public UserCustom findUserById(int id) throws Exception {
+		
+		return userMapperCustom.findUserById(id);
+	}
 
 }

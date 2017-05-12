@@ -18,4 +18,8 @@
   <select id="checkUser"  parameterType="com.xxt.po.UserQueryVo" resultType="com.xxt.po.UserCustom">
   	select * from user where username like #{userCustom.username} and password like #{userCustom.password}
   </select>
+  <!-- id查询用户 -->
+  <select id="findUserById"  parameterType="int" resultType="com.xxt.po.UserCustom">
+  	select * from user where id = #{value}
+  </select>
 </mapper>
