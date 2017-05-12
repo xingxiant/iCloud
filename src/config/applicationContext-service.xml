@@ -16,6 +16,7 @@
 		
 	<!-- 商品管理的service -->
 	<bean id="userServiceImpl" class="com.xxt.service.impl.UserServiceImpl"></bean>
+	
 	<bean id="fileServiceImpl" class="com.xxt.service.impl.FileServiceImpl"></bean>
 	
 </beans>

@@ -41,9 +41,17 @@ public class FileServiceImpl implements FileService {
 		}
 		page.setCurrentPage(currentPage);
 		if(currentPage<totalPage){
-			page.setPageData(list.subList((currentPage-1)*page.getPageCount(), (currentPage)*page.getPageCount()));
+			int fromIndex=(currentPage-1)*page.getPageCount();
+			if(fromIndex<0){
+				fromIndex=0;
+			}
+			page.setPageData(list.subList(fromIndex, (currentPage)*page.getPageCount()));
 		}else{
-			page.setPageData(list.subList(list.size()-list.size()%page.getPageCount(), list.size()));
+			int fromIndex=(currentPage-1)*page.getPageCount();
+			if(fromIndex<0){
+				fromIndex=0;
+			}
+			page.setPageData(list.subList(fromIndex, list.size()));
 		}
 		
 	
