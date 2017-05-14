@@ -1,6 +1,7 @@
 package com.xxt.controller;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,18 +37,22 @@ public class LogController {
 			
 			session.setAttribute("user_name", userCustom.getUsername());
 			session.setAttribute("user_id", userCustom.getId());
-			System.out.println(session.getAttribute("user_name"));
-			System.out.println(session.getAttribute("user_id"));
+			
 			return "/user/index.jsp";
 			}
 		
 		
 		
 	}
-	@RequestMapping("/")
-	public String ss(Model model,String username,String password)throws Exception{
+	@RequestMapping("/logout")
+	public String ss(Model model,HttpServletRequest request )throws Exception{
+		//退出登录，将用户名，id从session域中移除
+		HttpSession session=request.getSession();
 		
-		return "/jsp/test.jsp";
+		session.removeAttribute("user_name");
+		session.removeAttribute("user_id");
+		
+		return "/jsp/login.jsp";
 		
 		
 	}

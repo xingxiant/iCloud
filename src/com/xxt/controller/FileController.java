@@ -83,6 +83,18 @@ public class FileController {
 		
 		
 	}
+	@RequestMapping("/queryFile")
+	public String queryFile(Model model,int currentPage,HttpServletRequest request)throws Exception{
+		int user_id=(int) request.getSession().getAttribute("user_id");
+		PageBean<FileCustom> page=new PageBean<FileCustom>();
+		page.setCurrentPage(currentPage);
+		page=fileService.getPageBean(user_id,currentPage);
+		
+		model.addAttribute("pageBean", page);
+		return "/user/myFile.jsp";
+		
+		
+	}
 	@RequestMapping("/download")
 	public ResponseEntity<byte[]> download(@RequestParam("filename") String filename,Model model,HttpServletRequest request)throws Exception{
 		

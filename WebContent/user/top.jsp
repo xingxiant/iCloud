@@ -13,6 +13,6 @@
 
 %>
 <body>
-    <h1><a href='./right.jsp' target="mainWindow">iCloud云盘</a></h1>
+    <h1><a href='${pageContext.request.contextPath }/fileAction/queryAll.action?currentPage=1' target="mainWindow">iCloud云盘</a></h1>
 </body>
 </html>

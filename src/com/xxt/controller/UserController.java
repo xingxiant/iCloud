@@ -33,4 +33,12 @@ public class UserController {
 		return "/user/formation.jsp";
 		
 	}
+	@RequestMapping("/test")
+	public String test(Model model,HttpServletRequest request,String content) throws Exception{
+		
+	
+	model.addAttribute("content", content);
+		return "/user/testUser.jsp";
+		
+	}
 }
