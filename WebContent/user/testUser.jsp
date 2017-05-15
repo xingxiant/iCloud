@@ -9,6 +9,6 @@
 <title>测试界面</title>
 </head>
 <body>
-	${requestScope.content }
+	<%=request.getParameter("editorValue") %>
 </body>
 </html>

@@ -10,4 +10,6 @@ public interface FileMapperCustom {
 	public void insertFile(FileQueryVo fileQueryVo)throws Exception;
 	//根据用户id查询file
 	public List<FileCustom> findUserListByUserId(int id)throws Exception;
+	//根据name查询file
+	public List<FileCustom> findFileByName(FileQueryVo fileQueryVo)throws Exception;
 }

@@ -95,6 +95,12 @@ public class FileController {
 		
 		
 	}
+	@RequestMapping("/findFileByName")
+	public String findFileByName(Model model,String name,HttpServletRequest request)throws Exception{
+		return name;
+		
+		
+	}
 	@RequestMapping("/download")
 	public ResponseEntity<byte[]> download(@RequestParam("filename") String filename,Model model,HttpServletRequest request)throws Exception{
 		

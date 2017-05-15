@@ -60,6 +60,11 @@ public class FileServiceImpl implements FileService {
 		
 		return page;
 	}
+	@Override
+	public List<FileCustom> findFileByName(FileQueryVo fileQueryVo) throws Exception {
+		return fileMapperCustom.findFileByName(fileQueryVo);
+		
+	}
 	
 
 }

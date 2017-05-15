@@ -9,6 +9,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.xxt.po.FileCustom;
+import com.xxt.po.FileQueryVo;
 
 public class FileMapperCustomTestTest {
 	private ApplicationContext applicationContext;
@@ -25,7 +26,8 @@ public class FileMapperCustomTestTest {
 	@Test
 	public void test() throws Exception {
 		FileMapperCustom fileMapperCustom = (FileMapperCustom) applicationContext.getBean("fileMapperCustom");
-		List<FileCustom> list=fileMapperCustom.findUserListByUserId(2);
+		FileQueryVo fileQueryVo = new FileQueryVo();
+		List<FileCustom> list=fileMapperCustom.findFileByName(fileQueryVo);
 		for(FileCustom file:list){
 			System.out.println(file.getFilename());
 		}

@@ -15,4 +15,6 @@ public interface FileService {
 	public void addFile(FileQueryVo fileQueryVo)throws Exception;
 	//获得pageBean,根据userId和当前页数
 	public PageBean getPageBean(int userId,int currentPage)throws Exception;
+	//根据file name查找file
+	public List<FileCustom> findFileByName(FileQueryVo fileQueryVo)throws Exception;
 }
